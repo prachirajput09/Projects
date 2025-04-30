@@ -1,0 +1,438 @@
+* {
+    margin:0;
+    font-family: Arial;
+    border: border-box;
+}
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.nav-logo{
+    height: 50px;
+    width:100px;
+}
+.logo {
+    background-image: url("https://logos-world.net/wp-content/uploads/2020/04/Amazon-Emblem.jpg");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border:2px solid white ;
+}
+.add-first{
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+.add-sec{
+    color: #cccc;
+    font-size:1rem;
+    margin-left: 3px;
+}
+.add-icon{
+    display:flex;
+    align-items: center;
+}
+.nav-search{
+    display: flex;
+    background-color: pink;
+    width: 620px;
+    height: 40px;
+    border-radius: 3px;
+}
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: none;
+}
+.search-input{
+    width: 500px;
+    font-size: 1rem;
+    border: none;
+
+}
+.search-icon{
+    width: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #ffa600;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding-right: 2px;
+}
+.nav-search:hover{
+  border: 2px solid orange;  
+}
+/*box4*/
+span{
+    font-size: 0.7rem;
+}
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.new-cart i{
+font-size:35px ;
+
+}
+.new-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.panel{
+    height:40px;
+    background-color: #222f3d;
+    display: flex;
+    color:white;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.panel-options p{
+    display: inline;
+    margin-left: 10px;
+}
+.panel-options{
+    width: 70%;
+    font-size:0.85rem;
+}
+.panel-deals{
+    font-size:0.9rem;
+    font-weight: 700;
+}
+.hero-section{
+    background-image:url("https://m.media-amazon.com/images/I/61ryKP9ABsL._SX3000_.jpg");
+    background-size: cover;
+    height:350px ;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+.hero-msg{
+    background-color: white;
+    color:black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:0.85rem;
+    bottom:25px;
+    position: relative;
+    width:80%;
+    margin-bottom: 25px;
+}
+.hero-msg a{
+    color:#007185;
+}
+.shop-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color:#e2e7e6 ;
+}
+.box{  
+    
+    height: 400px;
+    width:23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+    
+
+}
+.box-image{
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+.box-content p{
+    color:#007185
+}
+footer{
+    margin-top: 15px;
+}
+.foot-panel1{
+    background-color: #37475a;
+    color:white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+.foot-panel2{
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top: 20px;
+}
+ul a{
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color:#dddddd
+}
+.foot-panel3{
+    background-color:#222f3d ;
+    color: white;
+    border-top: 1.5px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    background-image: url("https://logos-world.net/wp-content/uploads/2020/04/Amazon-Emblem.jpg");
+    background-size: cover;
+     height: 50px;
+     width: 100px;
+}
+.foot-panel4{
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    height: 80px;
+    font-size: 0.7rem;
+    text-align: center;
+    justify-content: center;  
+}
+.pages{
+    padding-top: 25px;
+}
+.copyright{
+    padding-top: 5px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .nav-search {
+        width: 90%;
+        height: 35px;
+    }
+
+    .search-input {
+        font-size: 0.9rem;
+    }
+
+    .shop-section .box {
+        width: 45%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .hero-section {
+        height: 250px;
+    }
+
+    .hero-msg {
+        font-size: 0.8rem;
+    }
+
+    .panel-options {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .nav-search {
+        width: 100%;
+        height: 30px;
+    }
+
+    .search-input {
+        font-size: 0.8rem;
+    }
+
+    .shop-section .box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .hero-section {
+        height: 200px;
+    }
+
+    .hero-msg {
+        font-size: 0.75rem;
+    }
+
+    .panel-options {
+        font-size: 0.75rem;
+    }
+
+    .foot-panel2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    ul {
+        margin-top: 10px;
+    }
+
+    ul a {
+        font-size: 0.8rem;
+    }
+}
+
+/* Responsive Design Enhancements */
+
+/* Tablet adjustments (768px and below) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+        height: auto;
+    }
+
+    .nav-logo, .logo {
+        width: 80px;
+        height: 40px;
+        background-size: contain;
+    }
+
+    .nav-search {
+        width: 90%;
+        height: 35px;
+        margin-top: 10px;
+    }
+
+    .shop-section .box {
+        width: 45%;
+        height: auto;
+    }
+
+    .box-image {
+        height: 200px;
+        background-size: contain;
+    }
+
+    .panel-options {
+        width: 100%;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .foot-panel2 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    ul {
+        margin: 10px 0;
+    }
+
+    ul a {
+        font-size: 0.8rem;
+    }
+}
+
+/* Mobile adjustments (480px and below) */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-search {
+        width: 95%;
+        height: 30px;
+        margin-top: 10px;
+    }
+
+    .search-select {
+        width: 40px;
+        font-size: 0.7rem;
+    }
+
+    .search-input {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .shop-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shop-section .box {
+        width: 90%;
+        height: auto;
+    }
+
+    .hero-section {
+        height: 180px;
+    }
+
+    .hero-msg {
+        font-size: 0.7rem;
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .panel {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .panel-options p {
+        margin: 5px;
+        display: block;
+    }
+
+    .foot-panel4 {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .pages, .copyright {
+        padding: 5px 0;
+    }
+}
+
+/* General fix to prevent horizontal scroll */
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
