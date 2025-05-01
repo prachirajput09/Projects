@@ -10,7 +10,7 @@ const[articles,setArticles]=  useState([])
 const[loading,setLoading]=  useState(true)
 const[page,setPage]=  useState(1)
 const[totalResults,setTotalResults]=  useState(0)
-//document.title=`${capitalizeFirstLetter(props.category)}-NewsMonkey`
+//document.title=`${capitalizeFirstLetter(props.category)}-News App`
   
 const capitalizeFirstLetter=(string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
@@ -29,7 +29,7 @@ const updateNews=async()=>{
         props.setProgress(100);
       } 
     useEffect(()=>{
-      document.title=`${capitalizeFirstLetter(props.category)}-NewsMonkey`
+      document.title=`${capitalizeFirstLetter(props.category)}-News App`
       updateNews();
       //eslint-disable-next-line
      },[])
@@ -85,9 +85,9 @@ const updateNews=async()=>{
       return (
       <>
       {/* // <div className="container my-3"> */}
-        <h1 className="text-center" style={{margin:'35px 0px',marginTop:'90px'}}>Newsmonkey -Top  {capitalizeFirstLetter(props.category)} Headlines</h1>
+        <h1 className="text-center" style={{margin:'35px 0px',marginTop:'90px'}}>News App -Top  {capitalizeFirstLetter(props.category)} Headlines</h1>
          {loading && <Spinner/>} 
-        {/* <h2> Newsmonkey -Top Headlines</h2> */}
+        {/* <h2> News App -Top Headlines</h2> */}
         <InfiniteScroll
           dataLength={articles.length}
           next={fetchMoreData}
